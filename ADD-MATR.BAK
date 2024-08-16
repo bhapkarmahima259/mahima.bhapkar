@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+int n1[2][2],i,j,add[2][2],n2[2][2];
+clrscr();
+printf("enter matrix:");
+for(i=0;i<=1;i++){
+for(j=0;j<=1;j++){
+scanf("%d",&n1[i] [j]);
+}
+}
+for(i=0;i<=1;i++)
+{
+for(j=0;j<=1;j++){
+printf("\t%d",n1[i][j]);
+}
+printf("\n");
+}
+printf("enter the second matrix:");
+for(i=0;i<=1;i++){
+for(j=0;j<=1;j++){
+scanf("%d",&n2[i][j]);
+}
+}
+for(i=0;i<=1;i++){
+for(j=0;j<=1;j++){
+printf("\t%d",n2[i][j]);
+}
+printf("\n");
+}
+printf("addition:\n");
+for(i=0;i<=1;i++){
+for(j=0;j<=1;j++){
+
+add[i][j]=n1[i][j]+n2[i][j];
+printf("\t%d",add[i][j]);}
+printf("\n");
+}
+getch();
+}
