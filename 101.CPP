@@ -2,23 +2,17 @@
 #include<conio.h>
 void main()
 {
-int m,n;
+int arr[5],length,i;
 clrscr();
-for(m=1;m<=4;m++)
-{
-for(n=1;n<=m;n++)
-{
-if(n%2==0)
-{
-printf("0");
-}
-else
-{
-printf("1");
-}
-}
-printf("\n");
+printf("enter the array:");
+for(i=0;i<5;i++){
+scanf("%d",arr[i]);}
+if(arr[0]==arr[4]){
 
+printf("true");
+}
+else{
+printf("false");
 }
 getch();
 }
