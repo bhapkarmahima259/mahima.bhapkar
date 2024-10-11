@@ -2,26 +2,26 @@
 #include<conio.h>
 void main()
 {
-int h,sp,v,k;
+int i,j,m,k;
 char p;
 clrscr();
-for(h=1;h<=4;h++){
-p='A';k=h+64;
-
-for(sp=1;sp<=4-h;sp++){
+for(i=1;i<=4;i++){
+p='A';	k=i+64;
+for(m=1;m<=35-i;m++)
+{
 printf(" ");
-
 }
-for(v=h;v>1;v--){
+for(j=i;j>1;j--)
+{
 printf("%c",p);
 p++;
 }
-for(v=1;v<=h;v++){
+for(j=1;j<=i;j++)
+{
 printf("%c",k);
 k--;
 }
 printf("\n");
-
 }
 getch();
 }
